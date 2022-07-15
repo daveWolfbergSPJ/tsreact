@@ -1,22 +1,20 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
+
+const Heading = ({title}: { title: string}) => <h2>{title}</h2>;
+const Box = ({children}: { children: React.ReactNode}) => (
+  <div>
+    {children}
+  </div>
+) 
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Welcome!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Heading title="TSREACT" />
+      <Box>
+        Hello There
+      </Box>
     </div>
   );
 }
